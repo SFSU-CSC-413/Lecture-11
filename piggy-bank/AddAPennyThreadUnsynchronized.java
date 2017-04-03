@@ -1,9 +1,7 @@
-import java.util.concurrent.ThreadLocalRandom;
-
-public class AddAPennyThread extends Thread {
+public class AddAPennyThreadUnsynchronized extends Thread {
   private PiggyBank bank;
 
-  public AddAPennyThread( PiggyBank bank ) {
+  public AddAPennyThreadUnsynchronized( PiggyBank bank ) {
     this.bank = bank;
   }
   

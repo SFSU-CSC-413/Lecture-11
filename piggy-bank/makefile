@@ -1,5 +1,5 @@
-all: clean PiggyBankWithoutSync.java PiggyBank.java AddAPennyThread.java
-	javac PiggyBankWithoutSync.java; java PiggyBankWithoutSync
+all: clean PiggyBankDriver.java PiggyBank.java AddAPennyThreadUnsynchronized.java
+	javac PiggyBankDriver.java; java PiggyBankDriver
 
 clean:
 	find . -type f -name '*.class' -delete

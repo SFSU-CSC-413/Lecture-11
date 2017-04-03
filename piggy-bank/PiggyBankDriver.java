@@ -1,4 +1,4 @@
-public class PiggyBankWithSync {
+public class PiggyBankDriver {
   public static void main( String[] args ) throws InterruptedException {
     final int count = 100;
 
@@ -6,7 +6,7 @@ public class PiggyBankWithSync {
     Thread pennies[] = new Thread[ count ];
 
     for( int i = 0; i < count; i++ ) {
-      pennies[ i ] = new AddAPennyThread( bank );
+      pennies[ i ] = new AddAPennyThreadUnsynchronized( bank );
       pennies[ i ].start();
     }
 
